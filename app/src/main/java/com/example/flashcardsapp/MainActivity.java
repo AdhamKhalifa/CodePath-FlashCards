@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     TextView Question;
     TextView Answer;
     ImageView plus;
-    ImageView cancelling;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent myIntent = new Intent(MainActivity.this, AddCardActivity.class);
                 MainActivity.this.startActivity(myIntent);
                 plus=(ImageView)findViewById(R.id.myBtn);
-                plus.setVisibility(View.INVISIBLE);
-                cancelling.setVisibility(View.VISIBLE);
             }
         });
     }
@@ -47,12 +45,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == 100) { // this 100 needs to match the 100 we used when we called startActivityForResult!
-            String string1 = data.getExtras().getString("string1"); // 'string1' needs to match the key we used when we put the string in the Intent
-            String string2 = data.getExtras().getString("string2");
-            Question.setText(string1);
-            Answer.setText(string2);
+        if (requestCode == 100 && data !=null) { // this 100 needs to match the 100 we used when we called startActivityForResult!
+            String string1 = data.getExtras().getString("string_01"); // 'string1' needs to match the key we used when we put the string in the Intent
+            String string2 = data.getExtras().getString("string_02");
+            //EditText stringq = ((EditText)findViewById(R.id.flashcard_question)).getText();
+            ((TextView) findViewById(R.id.flashcard_question)).setText(string1);
+            ((TextView) findViewById(R.id.Answer)).setText(string2);
         }
     }
-
 }
