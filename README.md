@@ -21,7 +21,7 @@ This application asks you a question and when you click on the question it shows
 
 ### App Walk-though
 
-<img src="https://i.imgur.com/YCQtZe3.gif" width=200><br>
+<img src="https://i.imgur.com/lGwKxxd.gif" width=200><br>
 
 
 ## Required
