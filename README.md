@@ -19,6 +19,9 @@ This application asks you a question and when you click on the question it shows
 
 ## Lab 2
 
+### App Description
+This application asks you a question and allows you to add a question and an answer so that it shows for the user.
+
 ### App Walk-though
 
 <img src="https://i.imgur.com/lGwKxxd.gif" width=200><br>
