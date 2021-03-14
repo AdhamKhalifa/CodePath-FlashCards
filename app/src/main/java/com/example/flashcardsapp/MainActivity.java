@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.myBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent myIntent = new Intent(MainActivity.this, AddCardActivity.class);
-                MainActivity.this.startActivity(myIntent);
+                Intent i = new Intent(MainActivity.this, AddCardActivity.class);
+                MainActivity.this.startActivityForResult(i, 100);
                 plus=(ImageView)findViewById(R.id.myBtn);
             }
         });
@@ -46,9 +46,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 100 && data !=null) { // this 100 needs to match the 100 we used when we called startActivityForResult!
-            String string1 = data.getExtras().getString("string_01"); // 'string1' needs to match the key we used when we put the string in the Intent
-            String string2 = data.getExtras().getString("string_02");
-            //EditText stringq = ((EditText)findViewById(R.id.flashcard_question)).getText();
+            String string1 = data.getExtras().getString("string1"); // 'string1' needs to match the key we used when we put the string in the Intent
+            String string2 = data.getExtras().getString("string2");
             ((TextView) findViewById(R.id.flashcard_question)).setText(string1);
             ((TextView) findViewById(R.id.Answer)).setText(string2);
         }
