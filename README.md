@@ -41,7 +41,7 @@ This application asks the user for a question and answer and can store many of t
 
 ### App Walk-though
 
-<img src="https://i.imgur.com/7GQQjQ3.gif" width=200><br>
+<img src="https://i.imgur.com/eDMmWv2.gif" width=200><br>
 
 ## Required
 - [x] User can create a card and still see their created card when the app is relaunched.
