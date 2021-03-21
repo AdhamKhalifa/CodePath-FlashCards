@@ -11,7 +11,7 @@
         android:layout_width="315dp"
         android:layout_height="146dp"
         android:width="200dp"
-        android:text="Who is the 44th President of the United States?"
+        android:text="Question goes here"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +21,7 @@
         android:id="@+id/Answer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Barack Obama"
+        android:text="Answer goes here"
         android:textSize="40sp"
         android:visibility="invisible"
         tools:layout_editor_absoluteX="84dp"
@@ -38,6 +38,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/plus" />
 
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="74dp"
+        android:layout_height="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/next" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
