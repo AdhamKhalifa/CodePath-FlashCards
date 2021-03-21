@@ -19,6 +19,9 @@ This application asks you a question and when you click on the question it shows
 
 ## Lab 2
 
+### App Description
+This application asks you a question and allows you to add a question and an answer so that it shows for the user.
+
 ### App Walk-though
 
 <img src="https://i.imgur.com/lGwKxxd.gif" width=200><br>
@@ -30,3 +33,16 @@ This application asks you a question and when you click on the question it shows
 - [x] User can enter and submit a Question and Answer through the 'Add Card Screen'
 - [x] User will see the card they just created on the main screen when they press the 'Save Button'
 - [x] Push your progress to GitHub!
+
+## Lab 3
+
+### App Description
+This application asks the user for a question and answer and can store many of them in a database to show later.
+
+### App Walk-though
+
+<img src="https://i.imgur.com/eDMmWv2.gif" width=200><br>
+
+## Required
+- [x] User can create a card and still see their created card when the app is relaunched.
+- [x] User can create muliple cards and browse through all created cards
